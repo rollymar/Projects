@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('img/mons.jpg') center/cover no-repeat fixed; /* Replace 'your-image.jpg' with your image URL */ 
+  height: auto; /* Ensure the background covers the entire viewport height */
+}
+
+/* CSS for Navigation Bar with Glass-like Effect */
+.navbar {
+  background: transparent; /* Adjust the alpha (last value) for transparency */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 50px; /* Adjust padding as needed */
+  transition: background 0.3s; /* Add transition for background color */
+}
+
+/* CSS for the animated button */
+.animated-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 50px; /* Adjust the initial margin-top value */
+  text-decoration: none;
+  color: white;
+  font-family: 'Arial', sans-serif; /* Change the font family here */
+   font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  filter: drop-shadow(3px 3px 4px black);
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.animated-button:hover {
+  color: rgb(255, 55, 45, 1.0);
+  background-color: white;
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 4px black);
+}
+
+/* Responsive styles for smaller screens and larger screens */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .animated-button {
+    margin-top: 20px; /* Adjust the margin for smaller screens */
+  }
+}
+
+
+/* Style for the logo */
+.logo {
+  color: white;
+  font-family: 'Lexend Zetta', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  filter: drop-shadow(3px 3px 4px black);
+}
+
+/* CSS for Social Media Icons with Glass-like Effect */
+.social-icons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: transparent; /* Adjust the alpha (last value) for transparency */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.social-icon {
+  color: white;
+  font-size: 25px; /* Adjust the icon size */
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s, font-size 0.3s; /* Add transition for color, font-size, and transform */
+}
+
+.social-icon:hover {
+  color: rgb(255, 55, 45, 1.0);
+  font-size: 30px; /* Adjust the increased icon size on hover */
+  transition: color 0.3s, font-size 0.3s, transform 0.3s; /* Add transition for transform on hover */
+  filter: drop-shadow(3px 3px 4px black);
+}
+
+/* Additional CSS for the tagline */
+.tagline {
+  position: fixed;
+  bottom: 20%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, 50%); /* Centering with translation */
+  color: white;
+  font-size: 20px; /* Adjust the font size */
+  font-style: italic;
+  filter: drop-shadow(2px 2px 3px black);
+}
+
+
+.your-name,
+.about {
+  color: white;
+  font-family: sans-serif;
+  filter: drop-shadow(3px 3px 4px black);
+  text-align: center; /* Center the text */
+}
+
+.your-name {
+  font-size: 50px;
+  margin: 30px 20px 20px 20px; /* Adjusted margin for centering */
+  font-weight: bold;
+}
+
+.about {
+  color: rgb(255, 55, 45, 1.0);
+  font-size: 50px;
+  margin: -15px 20px 20px 20px; /* Adjusted margin for centering */
+  font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    overflow: auto; /* Add overflow property for scrollability */
+}
+
+
+/* Style for the "TECH" part of the logo */
+.logo .tech-part {
+  color: white;
+  transition: color 0.3s, box-shadows 0.3s;
+  animation: logoColorChange 3s infinite alternate;
+
+}
+
+/* Keyframe animation for logo color change using RGB values */
+@keyframes logoColorChange {
+  0%, 100% {
+    color: white;
+  }
+  50% {
+    color: rgb(255, 55, 45, 1.0);
+  }
+}
+
+/* Style for the navigation bar links */
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 14px 16px;
+  transition: color 0.3s, font-size 0.3s; /* Add transition for font-size */
+}
+
+/* Change color and font-size on hover for navigation links */
+.nav-links a:hover {
+  color: rgb(255, 55, 45, 1.0);
+  filter: drop-shadow(3px 3px 4px black);
+  font-size: 35px; /* Adjust the increased icon size on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .info-container {
+    position: relative;
+    margin-right: 0; /* Remove the right margin to avoid overlap */
+  }
+}

@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('img/mons.jpg') center/cover no-repeat fixed; /* Replace 'your-image.jpg' with your image URL */ 
+  height: auto; /* Ensure the background covers the entire viewport height */
+}
+
+.right-side-text {
+    max-width: 40%; /* Adjust the maximum width as needed */
+    color: white;
+    font-family: sans-serif;
+    filter: drop-shadow(3px 3px 4px black);
+    text-align: left; /* Align the text to the left */
+    margin-top: 10px; /* Add some space between the name and additional text */
+    margin-left: 195px; /* Adjusted margin to align with .your-lastname */
+}
+
+.right-side-text p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+
+/* CSS for Navigation Bar with Glass-like Effect */
+.navbar {
+  background: transparent; /* Adjust the alpha (last value) for transparency */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 50px; /* Adjust padding as needed */
+  transition: background 0.3s; /* Add transition for background color */
+}
+
+
+/* Style for the logo */
+.logo {
+  color: white;
+  font-family: 'Lexend Zetta', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  filter: drop-shadow(3px 3px 4px black);
+}
+
+
+.your-name,
+.your-lastname {
+  color: white;
+  font-family: sans-serif;
+  filter: drop-shadow(3px 3px 4px black);
+  text-align: left; /* Align the text to the left */
+}
+
+.your-name {
+  font-size: 60px;
+  margin: 100px 20px -5px 200px; /* Adjusted margin for spacing */
+  font-weight: bold;
+}
+
+.your-lastname {
+  color: rgb(255, 55, 45, 1.0);
+  font-size: 90px;
+  margin: 0 20px 20px 195px; /* Adjusted margin for spacing */
+  font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    overflow: auto; /* Add overflow property for scrollability */
+}
+
+
+
+/* Style for the "TECH" part of the logo */
+.logo .tech-part {
+  color: white;
+  transition: color 0.3s, box-shadows 0.3s;
+  animation: logoColorChange 3s infinite alternate;
+
+}
+
+/* Keyframe animation for logo color change using RGB values */
+@keyframes logoColorChange {
+  0%, 100% {
+    color: white;
+  }
+  50% {
+    color: rgb(255, 55, 45, 1.0);
+  }
+}
+
+/* Style for the navigation bar links */
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 14px 16px;
+  transition: color 0.3s, font-size 0.3s; /* Add transition for font-size */
+}
+
+/* Change color and font-size on hover for navigation links */
+.nav-links a:hover {
+  color: rgb(255, 55, 45, 1.0);
+  filter: drop-shadow(3px 3px 4px black);
+  font-size: 35px; /* Adjust the increased icon size on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .info-container {
+    position: relative;
+    margin-right: 0; /* Remove the right margin to avoid overlap */
+  }
+}
