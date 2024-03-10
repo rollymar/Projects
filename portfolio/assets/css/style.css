@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('img/mons.jpg') center/cover no-repeat fixed; /* Replace 'your-image.jpg' with your image URL */ 
+  background: url('../img/mons.jpg') center/cover no-repeat fixed; /* Replace 'your-image.jpg' with your image URL */ 
   height: auto; /* Ensure the background covers the entire viewport height */
 }
 
