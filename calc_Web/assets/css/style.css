@@ -1,0 +1,39 @@
+.calculator {
+    width: 250px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px; /* Increase the font size for better visibility */
+    text-align: right; /* Align text to the right for a calculator-like display */
+    border: none; /* Remove the border for a cleaner look */
+    background-color: #f0f0f0; /* Set background color */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
