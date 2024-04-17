@@ -1,0 +1,99 @@
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+.progress-container {
+  position: relative;
+  width: 1325px;
+  background-color: #333;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.points-counter, .pps-counter {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+}
+
+.points-counter {
+  top: 60px;
+}
+
+.pps-counter {
+  bottom: 60px;
+}
+
+.progress-bar {
+  width: 20px; /* Adjust the width to make the progress bar smaller */
+  height: 30px;
+  background-color: #4caf50;
+}
+
+button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:active {
+  background-color: #666;
+}
+
+#counter {
+  color: #fff;
+}
+/* CSS for the message box */
+.message-box {
+  position: absolute;
+  left: 200px;
+  right: 10px;
+  top: 270px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  color: red; /* Red text color */
+  padding: 10px;
+  border-radius: 10px;
+}
+.skillContainer {
+  position: absolute;
+  left: 400px; /* Adjust the left position as needed */
+  top: 270px; /* Same top position as message box */
+  width: 500px; /* Adjust width as needed */
+  height: 260px; /* Same height as message box */
+  border: 2px solid #fff; /* White border */
+  padding: 10px;
+  border-radius: 10px;
+}
+.skillContainer button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #444; /* Dark background color for buttons */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.skillContainer button:hover {
+  background-color: #555;
+}
+
+.skillContainer button:active {
+  background-color: #666;
+}
