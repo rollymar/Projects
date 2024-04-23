@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: auto; /* Ensure the background covers the entire viewport height */
-  background-color: gray;
+  background: url('mons.jpg') center/cover no-repeat fixed; /* Replace 'your-image.jpg' with your image URL */
 }
 
 /* CSS for Navigation Bar with Glass-like Effect */
