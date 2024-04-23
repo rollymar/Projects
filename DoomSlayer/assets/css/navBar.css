@@ -16,7 +16,7 @@ body
 {
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: gray;
+    backgroud: url('Doom.jpg') no-repeat;
 }
 .header {
     position: absolute;
