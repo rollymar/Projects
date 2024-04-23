@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: auto; /* Ensure the background covers the entire viewport height */
+  background-color: gray;
 }
 
 /* CSS for Navigation Bar with Glass-like Effect */
