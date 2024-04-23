@@ -1,7 +1,7 @@
 .background {
     min-height: 100vh;
     min-width: 100vh;
-    background: url('../img/Doom.jpg') no-repeat;
+    background: url('Doom.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
