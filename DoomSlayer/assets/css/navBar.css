@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'DoomEternal';
+    src: url('EternalBattleBold-rgP3y.ttf') format('truetype'), /* Update the path */
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+html {
+  scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(255, 55, 45, 1.0);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    filter: drop-shadow(0 0 0.75rem black);
+    font-family: 'DoomEternal', sans-serif; /* Apply Doom Eternal font to the body */
+}
+
+.navBar a {
+    color: rgb(255, 55, 45, 1.0);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 35px;
+    transition: 0.3s;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.navBar a:hover {
+    color: crimson;
+}
+.navBar a i {
+    font-size: 24px; /* Initial font size of the icons */
+    transition: font-size 0.3s; /* Add transition effect */
+}
+
+.navBar a:hover i {
+    font-size: 30px; /* Font size of the icons on hover */
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.custom-button {
+    position: absolute; /* Change position to absolute */
+    top: 380px; /* Position the button vertically in the middle */
+    left: 310px; /* Position the button horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the button */
+    font-family: 'DoomEternal', sans-serif;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(255, 55, 45,0.7);
+    border: none;
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.custom-button:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), white; /* Change background on hover */
+    color: crimson; /* Change text color on hover */
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 13px;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.textSlay {
+    position: absolute;
+    font-family: 'DoomEternal', sans-serif;
+    color: white;
+    font-size: 35px;
+    top: 900px;
+    left: 890px;
+    filter: drop-shadow(0 0 0.75rem black);
+
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .textSlay {
+        top: 830px; /* Adjust top position for smaller screens */
+        left: 50%; /* Center the text horizontally */
+        transform: translateX(-50%); /* Move the text to the left by half of its width */
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .custom-button {
+        top: 260px; /* Adjust top position for smaller screens */
+        left: 50%; /* Center the div horizontally */
+        transform: translateX(-50%); /* Move the div to the left by half of its width */
+        width: 200px; /* Adjust width for smaller screens */
+        height: 40px; /* Adjust height for smaller screens */
+    }
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .navBar a {
+        margin-left: 18px; /* Adjust margin for smaller screens */
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+}
